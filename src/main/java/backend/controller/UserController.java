@@ -73,6 +73,7 @@ public class UserController {
     }
 
     //update
+    //Update rechecked
     @PutMapping("/user/{id}")
     UserModel updateProfile(@RequestBody UserModel newUserModel, @PathVariable String id) {
         return userRepository.findById(id)
