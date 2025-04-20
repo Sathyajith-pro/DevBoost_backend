@@ -39,7 +39,7 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(savedUser);
     }
 
-    //User Login
+    // post mapping integration
     @PostMapping("/login")
     public ResponseEntity<Map<String, Object>> login(@RequestBody UserModel loginDetails) {
         System.out.println("Login attempt for email: " + loginDetails.getEmail()); // Log email for debugging
