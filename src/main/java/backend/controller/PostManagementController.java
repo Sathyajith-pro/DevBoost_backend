@@ -28,6 +28,7 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
+//update  post management controller
 @RestController
 @RequestMapping("/posts")
 public class PostManagementController {
