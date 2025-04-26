@@ -83,6 +83,8 @@ public class PostManagementController {
                 })
                 .collect(Collectors.toList());
 
+        //create management model
+
         PostManagementModel post = new PostManagementModel();
         post.setUserID(userID);
         post.setTitle(title);
