@@ -23,6 +23,10 @@ public class OAuthController {
         Map<String, Object> attributes = oAuth2User.getAttributes();
         String email = (String) attributes.get("email");
         String name = (String) attributes.get("name");
+        /*
+ This is a multi-line comment.
+ It can span several lines.
+*/
 
         UserModel user;
         // Check if user already exists
