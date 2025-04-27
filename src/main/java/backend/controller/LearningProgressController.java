@@ -19,7 +19,7 @@ public class LearningProgressController {
     public LearningProgressModel newLearningProgressModel(@RequestBody LearningProgressModel newLearningProgressModel) {
         return learningProgressRepository.save(newLearningProgressModel);
     }
-
+// Resolve end point error
     @GetMapping("/learningProgress")
     List<LearningProgressModel> getAll() {
         return learningProgressRepository.findAll();
