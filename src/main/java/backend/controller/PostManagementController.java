@@ -257,7 +257,7 @@ public class PostManagementController {
                 })
                 .orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
     }
-
+//start upadate comment
     @PutMapping("/{postId}/comment/{commentId}")
     public ResponseEntity<PostManagementModel> updateComment(
             @PathVariable String postId,
