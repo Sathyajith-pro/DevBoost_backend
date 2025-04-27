@@ -30,7 +30,7 @@ public class LearningProgressController {
         return learningProgressRepository.findById(id)
                 .orElseThrow(() -> new LearningProgressNotFoundException(id));
     }
-
+//resolve fetching data error
     @PutMapping("/learningProgress/{id}")
     LearningProgressModel update(@RequestBody LearningProgressModel newLearningProgressModel, @PathVariable String id) {
         return learningProgressRepository.findById(id)
