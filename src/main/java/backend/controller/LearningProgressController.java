@@ -14,7 +14,7 @@ public class LearningProgressController {
     @Autowired
     private LearningProgressRepository learningProgressRepository;
 
-    //Insert
+    // Create a new Learning Progress entry
     @PostMapping("/learningProgress")
     public LearningProgressModel newLearningProgressModel(@RequestBody LearningProgressModel newLearningProgressModel) {
         return learningProgressRepository.save(newLearningProgressModel);
